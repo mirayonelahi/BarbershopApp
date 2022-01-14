@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.barbershopapp.Fragments.HomeFragment"
+        android:label="home_fragment"
+        tools:layout="@layout/home_fragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_userHomeFragment"
+            app:destination="@id/userHomeFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_adminAddBarberFragment"
+            app:destination="@id/adminAddBarberFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userHomeFragment"
+        android:name="com.example.barbershopapp.Fragments.UserHomeFragment"
+        android:label="user_home_fragment"
+        tools:layout="@layout/user_home_fragment" >
+        <action
+            android:id="@+id/action_userHomeFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_userHomeFragment_to_allBarberFragment"
+            app:destination="@id/allBarberFragment" />
+        <action
+            android:id="@+id/action_userHomeFragment_to_pricingFragment"
+            app:destination="@id/pricingFragment" />
+        <action
+            android:id="@+id/action_userHomeFragment_to_aboutUsFragment"
+            app:destination="@id/aboutUsFragment" />
+        <action
+            android:id="@+id/action_userHomeFragment_to_searchAppointmentFragment"
+            app:destination="@id/searchAppointmentFragment" />
+        <action
+            android:id="@+id/action_userHomeFragment_to_messageUsFragment"
+            app:destination="@id/messageUsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/allBarberFragment"
+        android:name="com.example.barbershopapp.Fragments.AllBarberFragment"
+        android:label="all_barber_fragment"
+        tools:layout="@layout/all_barber_fragment" >
+        <action
+            android:id="@+id/action_allBarberFragment_to_userHomeFragment"
+            app:destination="@id/userHomeFragment" />
+        <action
+            android:id="@+id/action_allBarberFragment_to_addAppointmentFragment"
+            app:destination="@id/addAppointmentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addAppointmentFragment"
+        android:name="com.example.barbershopapp.Fragments.AddAppointmentFragment"
+        android:label="add_appointment_fragment"
+        tools:layout="@layout/add_appointment_fragment" >
+        <action
+            android:id="@+id/action_addAppointmentFragment_to_allBarberFragment"
+            app:destination="@id/allBarberFragment" />
+        <argument android:name="selectedData"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_addAppointmentFragment_to_appointmentListFragment"
+            app:destination="@id/appointmentListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminAddBarberFragment"
+        android:name="com.example.barbershopapp.Fragments.AdminAddBarberFragment"
+        android:label="admin_add_barber_fragment"
+        tools:layout="@layout/admin_add_barber_fragment" >
+        <action
+            android:id="@+id/action_adminAddBarberFragment_to_allBarberFragment"
+            app:destination="@id/allBarberFragment" />
+        <action
+            android:id="@+id/action_adminAddBarberFragment_to_userHomeFragment"
+            app:destination="@id/userHomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/appointmentListFragment"
+        android:name="com.example.barbershopapp.Fragments.AppointmentListFragment"
+        android:label="appointment_list_fragment"
+        tools:layout="@layout/appointment_list_fragment" >
+        <argument
+            android:name="selectedBarberId"
+            app:argType="string" />
+        <argument
+            android:name="barberName"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/pricingFragment"
+        android:name="com.example.barbershopapp.PricingFragment"
+        android:label="fragment_pricing"
+        tools:layout="@layout/fragment_pricing" />
+    <fragment
+        android:id="@+id/aboutUsFragment"
+        android:name="com.example.barbershopapp.AboutUsFragment"
+        android:label="fragment_about_us"
+        tools:layout="@layout/fragment_about_us" />
+    <fragment
+        android:id="@+id/searchAppointmentFragment"
+        android:name="com.example.barbershopapp.Fragments.SearchAppointmentFragment"
+        android:label="search_appointment_fragment"
+        tools:layout="@layout/search_appointment_fragment" >
+        <action
+            android:id="@+id/action_searchAppointmentFragment_to_viewAppointmentFragment"
+            app:destination="@id/viewAppointmentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewAppointmentFragment"
+        android:name="com.example.barbershopapp.Fragments.ViewAppointmentFragment"
+        android:label="view_appointment_fragment"
+        tools:layout="@layout/view_appointment_fragment" >
+        <argument
+            android:name="searchByContact"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/messageUsFragment"
+        android:name="com.example.barbershopapp.Fragments.MessageUsFragment"
+        android:label="message_us_fragment"
+        tools:layout="@layout/message_us_fragment" >
+        <action
+            android:id="@+id/action_messageUsFragment_to_userHomeFragment"
+            app:destination="@id/userHomeFragment" />
+    </fragment>
+</navigation>

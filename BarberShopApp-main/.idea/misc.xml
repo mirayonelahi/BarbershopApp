@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable-v24/background_episode_number.xml" value="0.3260416666666667" />
+        <entry key="app/src/main/res/drawable-v24/ic_character_search_24.xml" value="0.3260416666666667" />
+        <entry key="app/src/main/res/drawable-v24/ic_episode_24.xml" value="0.3260416666666667" />
+        <entry key="app/src/main/res/drawable-v24/ic_female_24.xml" value="0.3260416666666667" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3260416666666667" />
+        <entry key="app/src/main/res/drawable-v24/ic_male_24.xml" value="0.3260416666666667" />
+        <entry key="app/src/main/res/drawable-v24/ic_people_24.xml" value="0.3260416666666667" />
+        <entry key="app/src/main/res/drawable-v24/ic_search_24.xml" value="0.3260416666666667" />
+        <entry key="app/src/main/res/drawable-v24/ic_unpaid_24.xml" value="0.3260416666666667" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.3260416666666667" />
+        <entry key="app/src/main/res/drawable/line.xml" value="0.3260416666666667" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.2824074074074074" />
+        <entry key="app/src/main/res/layout/add_appointment_fragment.xml" value="0.2953125" />
+        <entry key="app/src/main/res/layout/admin_add_barber_fragment.xml" value="0.2953125" />
+        <entry key="app/src/main/res/layout/all_barber_fragment.xml" value="0.2953125" />
+        <entry key="app/src/main/res/layout/appointment_list_fragment.xml" value="0.2953125" />
+        <entry key="app/src/main/res/layout/fragment_about_us.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/fragment_pricing.xml" value="0.2953125" />
+        <entry key="app/src/main/res/layout/home_fragment.xml" value="0.2824074074074074" />
+        <entry key="app/src/main/res/layout/message_us_fragment.xml" value="0.2953125" />
+        <entry key="app/src/main/res/layout/search_appointment_fragment.xml" value="0.2953125" />
+        <entry key="app/src/main/res/layout/single_appointment.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/single_barber.xml" value="0.2953125" />
+        <entry key="app/src/main/res/layout/user_home_fragment.xml" value="0.2953125" />
+        <entry key="app/src/main/res/layout/view_appointment_fragment.xml" value="0.2953125" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1140625" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.3260416666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

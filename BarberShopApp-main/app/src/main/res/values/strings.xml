@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BarberShopApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Contact us: 23412343211</string>
+</resources>

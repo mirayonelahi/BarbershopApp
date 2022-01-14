@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.AdminAddBarberFragment">
+
+    <TextView
+        android:id="@+id/textViewLabel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="53dp"
+        android:gravity="center"
+        android:text="Add New Barber"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextBarberName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextBarberName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="62dp"
+        android:ems="10"
+        android:hint="Barber Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextBarberContact"
+        app:layout_constraintEnd_toEndOf="@+id/editTextBarberEmail"
+        app:layout_constraintStart_toStartOf="@+id/editTextBarberEmail"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLabel" />
+
+    <EditText
+        android:id="@+id/editTextTextBarberContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="69dp"
+        android:ems="10"
+        android:hint="Barber Contact"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/editTextBarberEmail"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextBarberName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextBarberName" />
+
+    <EditText
+        android:id="@+id/editTextBarberEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginBottom="126dp"
+        android:ems="10"
+        android:hint="Barber Email"
+        android:inputType="textUri"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAddBarber"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextBarberContact" />
+
+    <Button
+        android:id="@+id/buttonAddBarber"
+        android:layout_width="162dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="121dp"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextBarberEmail" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.AddAppointmentFragment">
+
+    <TextView
+        android:id="@+id/textViewBarberName"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="36dp"
+        android:gravity="center"
+        android:text="Barber Name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextCustomerName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBarberName2" />
+
+    <TextView
+        android:id="@+id/textViewBarberName2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="33dp"
+        android:gravity="center"
+        android:text="Add An Appointment"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewBarberName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextCustomerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="Customer Name"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextCustomerContact"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBarberName" />
+
+    <EditText
+        android:id="@+id/editTextTextCustomerContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="27dp"
+        android:ems="10"
+        android:hint="Customer Contact"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTimeOfAppointment"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextCustomerName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextCustomerName" />
+
+    <EditText
+        android:id="@+id/editTextTimeOfAppointment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="49dp"
+        android:ems="10"
+        android:hint="dd/mm/yy hh:mm"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxPayment"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextCustomerContact"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextCustomerContact" />
+
+    <Button
+        android:id="@+id/buttonAddAppointment"
+        android:layout_width="152dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="149dp"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxPayment" />
+
+    <CheckBox
+        android:id="@+id/checkBoxPayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="55dp"
+        android:text="Payment"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAddAppointment"
+        app:layout_constraintEnd_toEndOf="@+id/buttonAddAppointment"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTimeOfAppointment" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
